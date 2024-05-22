@@ -54,7 +54,7 @@ $border-max: 1rem;
 
 $mobile: 560px;
 $tablet: 768px;
-$big-tablets: 900px;
+$big-tablet: 900px;
 $small-desktop: 1024px;
 $desktop: 1200px;
 $large-desktop: 1700px;
@@ -94,7 +94,7 @@ $text-size: 1.1rem;
 @mixin btn() {
   @include d-flex;
   gap: $small-gap;
-  background-color: $orange;
+  background-color: $light-blue;
   border: none;
   padding: $small-padding $standard-padding;
   font-size: $text-size;
