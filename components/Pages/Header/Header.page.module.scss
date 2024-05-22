@@ -1,0 +1,60 @@
+@import "@/style/index.scss";
+
+.headerWrapper {
+  @include d-flex;
+  justify-content: space-between;
+  &__logoSection {
+    cursor: pointer;
+    &__img {
+      will-change: scale;
+      transition: scale 0.7s;
+    }
+    &__img:hover {
+      scale: $hover-med-scale;
+    }
+  }
+  &__hamburgerMenu {
+    @media screen and (min-width: $big-tablet) {
+      display: none;
+    }
+  }
+  &__menuList {
+    display: none;
+    @media screen and (min-width: $big-tablet) {
+      @include d-flex;
+      gap: 5vw;
+    }
+    &__linksWrapper {
+      @include d-flex;
+      &__links {
+        @include d-flex;
+        gap: 2.5rem;
+        list-style-type: none;
+        font-size: $text-size;
+        &__link {
+          transition: color, scale, 0.7s;
+          will-change: color, scale;
+        }
+        &__link:hover {
+          color: $dark-blue;
+          cursor: pointer;
+          scale: $hover-med-scale;
+        }
+      }
+    }
+    &__findJob {
+      @include d-flex;
+      &__btn {
+        @include btn();
+        transition: scale, background-color, color, border, 0.7s;
+        will-change: scale, background-color, color, border;
+      }
+      &__btn:hover {
+        scale: $hover-med-scale;
+        background-color: transparent;
+        color: $light-blue;
+        border: 1px solid $light-blue;
+      }
+    }
+  }
+}

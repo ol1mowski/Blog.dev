@@ -5,63 +5,42 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  padding: 0 30px;
-  &__headerWrapper {
-    @include d-flex;
-    justify-content: space-around;
-    &__logoSection {
-      cursor: pointer;
-      &__img {
-        will-change: scale;
-        transition: scale 0.7s;
-      }
-      &__img:hover {
-        scale: $hover-med-scale;
+  padding: 0 10vw;
+
+  &__contentSection {
+    margin-top: 20vh;
+    @include d-flex-column;
+    align-items: flex-start;
+    gap: 1rem;
+    max-width: 30rem;
+    &__category {
+      font-weight: 700;
+    }
+    &__title {
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-style: normal;
+      font-size: 2rem;
+      @media screen and (min-width: $tablet) {
+        font-size: 3rem;
       }
     }
-    &__hamburgerMenu {
-      @media screen and (min-width: $big-tablet) {
-        display: none;
-      }
+    &__description {
+      font-weight: 300;
+      line-height: 24px;
+      font-size: $text-size;
     }
-    &__menuList {
-      display: none;
-      @media screen and (min-width: $big-tablet) {
-        @include d-flex;
-        gap: 5vw;
-      }
-      &__linksWrapper {
-        @include d-flex;
-        &__links {
-          @include d-flex;
-          gap: 2.5rem;
-          list-style-type: none;
-          font-size: $text-size;
-          &__link {
-            transition: color, scale, 0.7s;
-            will-change: color, scale;
-          }
-          &__link:hover {
-            color: $dark-blue;
-            cursor: pointer;
-            scale: $hover-med-scale;
-          }
-        }
-      }
-      &__findJob {
-        @include d-flex;
-        &__btn {
-          @include btn();
-          transition: scale, background-color, color, border, 0.7s;
-          will-change: scale, background-color, color, border;
-        }
-        &__btn:hover {
-          scale: $hover-med-scale;
-          background-color: transparent;
-          color: $light-blue;
-          border: 1px solid $light-blue;
-        }
-      }
+    &__btn {
+      margin-top: 1rem;
+      @include btn();
+      transition: scale, background-color, color, border, 0.7s;
+      will-change: scale, background-color, color, border;
+    }
+    &__btn:hover {
+      scale: $hover-med-scale;
+      background-color: transparent;
+      color: $light-blue;
+      border: 1px solid $light-blue;
     }
   }
 }
