@@ -1,11 +1,13 @@
 @import "@/style/index.scss";
 
 .container {
-  padding: 0 10vw;
+  padding: 5vh 10vw;
   @include d-flex-column;
   gap: 5rem;
   &__header {
     @include d-flex;
+    justify-content: flex-start;
+    width: 100%;
     &__content {
       font-family: "Roboto", sans-serif;
       font-weight: 500;
@@ -20,51 +22,14 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    &__postCard {
-      @include d-flex-column;
-      gap: 2rem;
-      &__imageSection {
-        @include d-flex;
-        &__img {
-          border-radius: 1rem;
-        }
-      }
-      &__contentSection {
-        @include d-flex-column;
-        gap: 0.7rem;
-        padding: 0 .5rem;
-        &__title {
-          font-family: "Roboto", sans-serif;
-          font-weight: 500;
-          font-style: normal;
-          font-size: 1.4rem;
-          color: $dark;
-        }
-        &__description {
-          font-weight: 300;
-          line-height: 24px;
-          font-size: 1rem;
-          color: $grey;
-        }
-      }
-      &__authorSection {
-        @include d-flex;
-        gap: 0.7rem;
-        &__avatar {
-          border-radius: 50%;
-        }
-        &__dot {
-          width: 0.5rem;
-          height: 0.5rem;
-          border-radius: 100%;
-          background-color: $black;
-        }
-        &__name,
-        &__date {
-          font-size: 0.8rem;
-          color: $dark-grey;
-        }
-      }
+    gap: 5rem;
+    @media screen and (min-width: $big-tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    @media screen and (min-width: $desktop) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
     }
   }
   &__button {
