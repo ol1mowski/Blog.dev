@@ -1,35 +1,29 @@
 @import "@/style/index.scss";
 
 .container {
-  background-image: url("../../../assets/background_image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  padding: 0 10vw;
-  color: $white;
-
-  @media screen and (min-width: $small-desktop) {
-    height: 100vh;
+  padding: 5rem 10vw;
+  @include d-flex-column;
+  gap: 5rem;
+  color: $dark;
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    justify-content: space-between;
   }
-
   &__contentSection {
-    margin-top: 20vh;
+    margin-top: 10vh;
     @include d-flex-column;
     align-items: flex-start;
     gap: 1rem;
     max-width: 30rem;
     padding-bottom: 5vh;
-    @media screen and (min-width: $small-desktop) {
-      margin-top: 30vh;
-    }
-    &__category {
-      font-weight: 700;
+    &__ytSpan {
+      color: $red;
     }
     &__title {
       font-family: "Roboto", sans-serif;
-      font-weight: 900;
+      font-weight: 500;
       font-style: normal;
-      font-size: 2rem;
+      font-size: 2.5rem;
       @media screen and (min-width: $tablet) {
         font-size: 3rem;
       }
@@ -38,18 +32,34 @@
       font-weight: 300;
       line-height: 24px;
       font-size: $text-size;
+      color: $grey;
     }
     &__btn {
       margin-top: 1rem;
       @include btn();
+      background-color: $red;
       transition: scale, background-color, color, border, 0.7s;
       will-change: scale, background-color, color, border;
     }
     &__btn:hover {
       scale: $hover-med-scale;
       background-color: transparent;
-      color: $light-blue;
-      border: 1px solid $light-blue;
+      color: $red;
+      border: 1px solid $red;
+    }
+  }
+  &__imageSection {
+    @include d-flex;
+    &__img {
+      @media screen and (min-width: $mobile) {
+        width: 70vw;
+        height: 65vh;
+      }
+
+      @media screen and (min-width: $desktop) {
+        width: 50vw;
+        height: 75vh;
+      }
     }
   }
 }
