@@ -13,6 +13,10 @@
     align-items: flex-start;
     gap: 1rem;
     max-width: 30rem;
+    padding-bottom: 5vh;
+    @media screen and (min-width: $small-desktop) {
+      margin-top: 30vh;
+    }
     &__category {
       font-weight: 700;
     }
