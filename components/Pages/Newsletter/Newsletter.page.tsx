@@ -10,7 +10,7 @@ function Newsletter() {
         <Image
           className={s.container__imageSection__img}
           src={newsletterImage}
-          alt=""
+          alt="Newsletter image"
           width={300}
           height={300}
         />
@@ -32,7 +32,7 @@ function Newsletter() {
             className={s.container__contentSection__form__inp}
             type="text"
             name="email"
-            placeholder="twój email"
+            placeholder="Twój email"
           />
           <button className={s.container__contentSection__form__btn}>-</button>
         </form>

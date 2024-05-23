@@ -37,21 +37,22 @@
     &__form {
       @include d-flex;
       &__inp {
-        padding: $small-padding $standard-padding;
+        padding: 0.75rem $standard-padding;
         border-radius: 0.5rem 0 0 0.5rem;
+        font-size: $text-size;
         border: 0.1rem solid $dark-blue;
+        color: $dark-grey;
       }
       &__btn {
         @include btn();
+        padding: 0.75rem $standard-padding;
         background-color: $dark-blue;
         border-radius: 0 0.5rem 0.5rem 0;
-        transition: background-color, color, border, 0.7s;
-        will-change: background-color, color, border;
+        border: 0.1rem solid $dark-blue;
       }
       &__btn:hover {
         background-color: transparent;
         color: $dark-blue;
-        border: 1px solid $dark-blue;
       }
     }
   }
@@ -59,8 +60,13 @@
     @include d-flex;
     &__img {
       @media screen and (min-width: $mobile) {
-        width: 50rem;
+        width: 70vw;
         height: 65vh;
+      }
+
+      @media screen and (min-width: $desktop) {
+        width: 40vw;
+        height: 75vh;
       }
     }
   }
