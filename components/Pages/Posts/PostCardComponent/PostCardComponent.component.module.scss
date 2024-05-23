@@ -6,6 +6,8 @@
   @media screen and (min-width: 425px) {
     width: 20rem;
   }
+  transition: scale, 0.7s;
+  will-change: scale;
   &__imageSection {
     @include d-flex;
     width: 100%;
@@ -53,4 +55,8 @@
       color: $dark-grey;
     }
   }
+}
+.postCard:hover {
+  scale: $hover-med-scale;
+  cursor: pointer;
 }
