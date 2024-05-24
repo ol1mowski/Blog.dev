@@ -8,6 +8,7 @@
   @media screen and (min-width: $desktop) {
     flex-direction: row;
     justify-content: space-between;
+    padding: 5rem 15vw;
   }
   &__contentSection {
     margin-top: 10vh;
@@ -36,34 +37,37 @@
     }
     &__form {
       @include d-flex;
+      margin-top: 1rem;
       &__inp {
         padding: 0.75rem $standard-padding;
         border-radius: 0.5rem 0 0 0.5rem;
         font-size: $text-size;
         border: 0.1rem solid $dark-blue;
-        color: $dark-grey;
+        color: $dark;
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 2px;
       }
       &__btn {
         @include btn();
-        padding: 0.75rem $standard-padding;
+        padding: 0.625rem $standard-padding;
         background-color: $dark-blue;
         border-radius: 0 0.5rem 0.5rem 0;
         border: 0.1rem solid $dark-blue;
       }
       &__btn:hover {
-        background-color: transparent;
+        background-color: $light-blue;
         color: $dark-blue;
+        border: 0.1rem solid $light-blue;
       }
     }
   }
   &__imageSection {
     @include d-flex;
     &__img {
-      @media screen and (min-width: $mobile) {
-        width: 70vw;
-        height: 65vh;
-      }
-
+      width: 70vw;
+      height: 65vh;
       @media screen and (min-width: $desktop) {
         width: 40vw;
         height: 75vh;

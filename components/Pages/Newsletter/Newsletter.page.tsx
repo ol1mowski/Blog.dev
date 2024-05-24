@@ -1,7 +1,8 @@
 import Image from "next/image";
 import s from "./Newsletter.module.scss";
 
-import newsletterImage from "@/assets/newsletter_image.png";
+import newsletterImage from "@/assets/newsletter_image.svg";
+import arrowIcon from '@/assets/arrow.png';
 
 function Newsletter() {
   return (
@@ -34,7 +35,7 @@ function Newsletter() {
             name="email"
             placeholder="Twój email"
           />
-          <button className={s.container__contentSection__form__btn}>-</button>
+          <button className={s.container__contentSection__form__btn}><Image src={arrowIcon} alt="arrow icon" width={25} height={25} /></button>
         </form>
       </section>
     </section>

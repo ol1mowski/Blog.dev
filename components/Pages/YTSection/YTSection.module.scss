@@ -8,6 +8,7 @@
   @media screen and (min-width: $desktop) {
     flex-direction: row;
     justify-content: space-between;
+    padding: 5rem 15vw;
   }
   &__contentSection {
     margin-top: 10vh;
@@ -51,13 +52,10 @@
   &__imageSection {
     @include d-flex;
     &__img {
-      @media screen and (min-width: $mobile) {
-        width: 70vw;
-        height: 65vh;
-      }
-
+      width: 70vw;
+      height: 65vh;
       @media screen and (min-width: $desktop) {
-        width: 50vw;
+        width: 40vw;
         height: 75vh;
       }
     }

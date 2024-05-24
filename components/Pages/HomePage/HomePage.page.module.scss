@@ -12,6 +12,10 @@
     height: 100vh;
   }
 
+  @media screen and (min-width: $desktop) {
+    padding: 0 15vw;
+  }
+
   &__contentSection {
     margin-top: 20vh;
     @include d-flex-column;

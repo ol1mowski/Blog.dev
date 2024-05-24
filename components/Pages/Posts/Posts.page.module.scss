@@ -4,6 +4,9 @@
   padding: 5vh 10vw;
   @include d-flex-column;
   gap: 5rem;
+  @media screen and (min-width: $desktop) {
+    padding: 5vh 15vw;
+  }
   &__header {
     @include d-flex;
     justify-content: flex-start;
