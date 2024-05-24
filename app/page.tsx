@@ -1,3 +1,4 @@
+import Footer from "@/components/Pages/Footer/Footer.page";
 import HomePage from "@/components/Pages/HomePage/HomePage.page";
 import Newsletter from "@/components/Pages/Newsletter/Newsletter.page";
 import Posts from "@/components/Pages/Posts/Posts.page";
@@ -10,6 +11,7 @@ export default function Home() {
       <YTSection />
       <Posts />
       <Newsletter />
+      <Footer />
     </>
   );
 }
