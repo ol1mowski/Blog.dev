@@ -7,6 +7,7 @@ import blogLogo from "@/assets/logo.svg";
 import ytIcon from "@/assets/yt_icon.svg";
 import linkedinIcon from "@/assets/linkedin_icon.svg";
 import githubIcon from "@/assets/github_icon.svg";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -113,7 +114,7 @@ function Footer() {
                     s.container__linksSection__linksWrapper__sectionElementsWrapper__listItems__item
                   }
                 >
-                  Polityka Prywatności
+                  <Link href={"/prywatnosc"}>Polityka Prywatności</Link>
                 </li>
               </ul>
             </div>
