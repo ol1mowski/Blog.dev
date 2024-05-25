@@ -1,4 +1,4 @@
-import Header from "../Header/Header.page";
+import Header from "../../UI/Header/Header.page";
 import s from "./HomePage.page.module.scss";
 
 import logo from "@/assets/logo.svg";

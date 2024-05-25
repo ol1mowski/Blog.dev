@@ -1,5 +1,5 @@
-import Footer from "@/components/Pages/Footer/Footer.page";
-import Header from "@/components/Pages/Header/Header.page";
+import Footer from "@/components/UI/Footer/Footer.page";
+import Header from "@/components/UI/Header/Header.page";
 import logo from "@/assets/logo_black.svg";
 
 function page() {
