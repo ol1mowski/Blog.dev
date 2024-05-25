@@ -47,21 +47,41 @@ function Footer() {
                     s.container__linksSection__linksWrapper__sectionElementsWrapper__listItems__item
                   }
                 >
-                  Oferty Pracy
+                  <a
+                    href="https://justjoin.it/all-locations/javascript"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Oferty Pracy
+                  </a>
                 </li>
+
                 <li
                   className={
                     s.container__linksSection__linksWrapper__sectionElementsWrapper__listItems__item
                   }
                 >
-                  Kursy IT
+                  <a
+                    href="https://www.udemy.com/topic/web-development/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Kursy IT
+                  </a>
                 </li>
+
                 <li
                   className={
                     s.container__linksSection__linksWrapper__sectionElementsWrapper__listItems__item
                   }
                 >
-                  Ksiązki IT
+                  <a
+                    href="https://helion.pl/kategorie/webmasterstwo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ksiązki IT
+                  </a>
                 </li>
               </ul>
             </div>
@@ -115,33 +135,59 @@ function Footer() {
                 s.container__linksSection__linksWrapper__sectionElementsWrapper
               }
             >
-              <Image
-                className={s.container__linksSection__linksWrapper__sectionElementsWrapper__img}
-                src={ytIcon}
-                alt="YouTube Icon"
-                width={50}
-                height={50}
-              />
-              <Image
-                className={s.container__linksSection__linksWrapper__sectionElementsWrapper__img}
-                src={linkedinIcon}
-                alt="LinkedIn Icon"
-                width={50}
-                height={50}
-              />
-              <Image
-                className={s.container__linksSection__linksWrapper__sectionElementsWrapper__img}
-                src={githubIcon}
-                alt="GitHub icon"
-                width={47}
-                height={47}
-              />
+              <a
+                href="https://www.youtube.com/channel/UCTNFKRALTZoSQS6mDOuDs2Q"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  className={
+                    s.container__linksSection__linksWrapper__sectionElementsWrapper__img
+                  }
+                  src={ytIcon}
+                  alt="YouTube Icon"
+                  width={50}
+                  height={50}
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/oliwier-markiewicz-47857228a/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  className={
+                    s.container__linksSection__linksWrapper__sectionElementsWrapper__img
+                  }
+                  src={linkedinIcon}
+                  alt="LinkedIn Icon"
+                  width={50}
+                  height={50}
+                />
+              </a>
+              <a
+                href="https://github.com/ol1mowski"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  className={
+                    s.container__linksSection__linksWrapper__sectionElementsWrapper__img
+                  }
+                  src={githubIcon}
+                  alt="GitHub icon"
+                  width={47}
+                  height={47}
+                />
+              </a>
             </div>
           </section>
         </section>
       </section>
       <section className={s.container__copyright}>
-        <span className={s.container__copyright__content}>Copyright © 2024 Made by Oliwier Markiewicz</span>
+        <span className={s.container__copyright__content}>
+          Copyright © 2024 Made by Oliwier Markiewicz
+        </span>
       </section>
     </footer>
   );
