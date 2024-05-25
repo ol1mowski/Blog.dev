@@ -1,10 +1,12 @@
 import Header from "../Header/Header.page";
 import s from "./HomePage.page.module.scss";
 
+import logo from "@/assets/logo.svg";
+
 function HomePage() {
   return (
     <section className={s.container}>
-      <Header />
+      <Header logo={logo} />
       <section className={s.container__content}>
         <section className={s.container__contentSection}>
           <span className={s.container__contentSection__category}>React</span>

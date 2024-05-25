@@ -1,10 +1,9 @@
 import s from "./Header.page.module.scss";
 
-import logo from "@/assets/logo.svg";
 import hamburger from "@/assets/hamburger.svg";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 
-function Header() {
+function Header({ logo }: { logo: StaticImageData }) {
   return (
     <header className={s.headerWrapper}>
       <section className={s.headerWrapper__logoSection}>

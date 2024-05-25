@@ -1,12 +1,12 @@
 import Footer from "@/components/Pages/Footer/Footer.page";
 import Header from "@/components/Pages/Header/Header.page";
-import React from "react";
+import logo from "@/assets/logo_black.svg";
 
 function page() {
   return (
     <>
-      <Header />
-      
+      <Header logo={logo} />
+
       <Footer />
     </>
   );
