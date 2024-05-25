@@ -1,4 +1,4 @@
-import s from "./Header.page.module.scss";
+import s from "./Header.component.module.scss";
 
 import hamburger from "@/assets/hamburger.svg";
 import Image, { type StaticImageData } from "next/image";

@@ -1,4 +1,4 @@
-import Footer from "@/components/UI/Footer/Footer.page";
+import Footer from "@/components/UI/Footer/Footer.component.page";
 import HomePage from "@/components/Pages/HomePage/HomePage.page";
 import Newsletter from "@/components/Pages/Newsletter/Newsletter.page";
 import Posts from "@/components/Pages/Posts/Posts.page";

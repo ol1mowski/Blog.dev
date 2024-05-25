@@ -1,4 +1,4 @@
-import s from "./Footer.page.module.scss";
+import s from "./Footer.component.module.scss";
 
 import Image from "next/image";
 
