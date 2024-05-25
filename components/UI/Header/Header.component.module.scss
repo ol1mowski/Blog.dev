@@ -48,17 +48,6 @@
     }
     &__findJob {
       @include d-flex;
-      &__btn {
-        @include btn();
-        transition: scale, background-color, color, border, 0.7s;
-        will-change: scale, background-color, color, border;
-      }
-      &__btn:hover {
-        scale: $hover-med-scale;
-        background-color: transparent;
-        color: $light-blue;
-        border: 1px solid $light-blue;
-      }
     }
   }
 }

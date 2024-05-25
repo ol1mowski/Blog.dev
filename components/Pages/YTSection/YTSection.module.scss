@@ -35,19 +35,6 @@
       font-size: $text-size;
       color: $grey;
     }
-    &__btn {
-      margin-top: 1rem;
-      @include btn();
-      background-color: $red;
-      transition: scale, background-color, color, border, 0.7s;
-      will-change: scale, background-color, color, border;
-    }
-    &__btn:hover {
-      scale: $hover-med-scale;
-      background-color: transparent;
-      color: $red;
-      border: 1px solid $red;
-    }
   }
   &__imageSection {
     @include d-flex;

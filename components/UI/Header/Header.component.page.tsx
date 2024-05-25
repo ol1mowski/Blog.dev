@@ -2,6 +2,7 @@ import s from "./Header.component.module.scss";
 
 import hamburger from "@/assets/hamburger.svg";
 import Image, { type StaticImageData } from "next/image";
+import Button from "../Button/Button.component";
 
 function Header({ logo }: { logo: StaticImageData }) {
   return (
@@ -63,11 +64,7 @@ function Header({ logo }: { logo: StaticImageData }) {
           </ul>
         </section>
         <section className={s.headerWrapper__menuList__findJob}>
-          <button
-            className={s.headerWrapper__menuList__findJob__btn}
-          >
-            Oferty Pracy
-          </button>
+          <Button type="normal" />
         </section>
       </section>
     </header>
