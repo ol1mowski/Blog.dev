@@ -22,7 +22,7 @@
     margin-top: 20vh;
     @include d-flex-column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 1.3rem;
     max-width: 30rem;
     padding-bottom: 10vh;
     @media screen and (min-width: $small-desktop) {

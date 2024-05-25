@@ -4,6 +4,7 @@ import s from "./HomePage.page.module.scss";
 
 import logo from "@/assets/logo.svg";
 import Description from "@/components/UI/Description/Description.component";
+import Button from "@/components/UI/Button/Button.component";
 
 function HomePage() {
   return (
@@ -20,7 +21,7 @@ function HomePage() {
             value="Tutaj podzielę się z wami najlepszymi kursami i ksiązkami o tematyce
       tworzenia stron internetowych. Koniecznie musisz je znać"
           />
-          <button className={s.container__contentSection__btn}>Czytaj</button>
+          <Button type="normal" value={'Czytaj'}/>
         </section>
       </section>
     </section>

@@ -44,7 +44,7 @@ function Header({ logo }: { logo: StaticImageData }) {
           </ul>
         </section>
         <section className={s.headerWrapper__menuList__findJob}>
-          <Button type="normal" />
+          <Button type="normal" value="Oferty Pracy" />
         </section>
       </section>
     </header>

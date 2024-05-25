@@ -1,9 +1,9 @@
 import s from "./Button.component.module.scss";
 
-function Button({ type }: { type: 'normal' | 'yt' }) {
+function Button({ type, value }: { type: 'normal' | 'yt', value: string }) {
   return (
     <button className={type === 'yt' ? s.btn_yt : s.btn}>
-      Oferty Pracy
+      { value }
     </button>
   );
 }
