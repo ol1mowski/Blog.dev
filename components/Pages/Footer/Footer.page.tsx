@@ -116,21 +116,21 @@ function Footer() {
               }
             >
               <Image
-                className={s.container__logoSection__img}
+                className={s.container__linksSection__linksWrapper__sectionElementsWrapper__img}
                 src={ytIcon}
                 alt="YouTube Icon"
                 width={50}
                 height={50}
               />
               <Image
-                className={s.container__logoSection__img}
+                className={s.container__linksSection__linksWrapper__sectionElementsWrapper__img}
                 src={linkedinIcon}
                 alt="LinkedIn Icon"
                 width={50}
                 height={50}
               />
               <Image
-                className={s.container__logoSection__img}
+                className={s.container__linksSection__linksWrapper__sectionElementsWrapper__img}
                 src={githubIcon}
                 alt="GitHub icon"
                 width={47}
