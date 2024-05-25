@@ -29,12 +29,6 @@
         font-size: 3rem;
       }
     }
-    &__description {
-      font-weight: 300;
-      line-height: 24px;
-      font-size: $text-size;
-      color: $grey;
-    }
     &__form {
       @include d-flex;
       margin-top: 1rem;

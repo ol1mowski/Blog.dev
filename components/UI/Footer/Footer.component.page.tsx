@@ -18,6 +18,8 @@ function Footer() {
             className={s.container__logoSection__img}
             src={blogLogo}
             alt="Blog's logo"
+            width={150}
+            height={150}
           />
         </section>
         <section className={s.container__linksSection}>

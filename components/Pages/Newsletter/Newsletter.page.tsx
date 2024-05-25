@@ -2,7 +2,8 @@ import Image from "next/image";
 import s from "./Newsletter.module.scss";
 
 import newsletterImage from "@/assets/newsletter_image.svg";
-import arrowIcon from '@/assets/arrow.png';
+import arrowIcon from "@/assets/arrow.png";
+import Description from "@/components/UI/Description/Description.component";
 
 function Newsletter() {
   return (
@@ -24,18 +25,25 @@ function Newsletter() {
             Newsletter
           </span>
         </h1>
-        <p className={s.container__contentSection__description}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard
-        </p>
-        <form className={s.container__contentSection__form} action="">
+        <Description
+          value="Znajdziesz tu konkretne informacje o pracy w branży IT,
+          najnowocześniejsze rozwiązania w branży, praktyczne porady i wiele
+          więcej."
+        />
+        <form
+          className={s.container__contentSection__form}
+          action="/"
+          method="POST"
+        >
           <input
             className={s.container__contentSection__form__inp}
             type="text"
             name="email"
             placeholder="Twój email"
           />
-          <button className={s.container__contentSection__form__btn}><Image src={arrowIcon} alt="arrow icon" width={25} height={25} /></button>
+          <button className={s.container__contentSection__form__btn}>
+            <Image src={arrowIcon} alt="arrow icon" width={25} height={25} />
+          </button>
         </form>
       </section>
     </section>
