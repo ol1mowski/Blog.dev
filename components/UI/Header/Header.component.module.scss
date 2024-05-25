@@ -34,16 +34,6 @@
         @include d-flex;
         gap: 2.5rem;
         list-style-type: none;
-        font-size: $text-size;
-        &__link {
-          transition: color, scale, 0.7s;
-          will-change: color, scale;
-        }
-        &__link:hover {
-          color: $dark-blue;
-          cursor: pointer;
-          scale: $hover-med-scale;
-        }
       }
     }
     &__findJob {
