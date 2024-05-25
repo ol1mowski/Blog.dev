@@ -3,6 +3,10 @@
 .headerWrapper {
   @include d-flex;
   justify-content: space-between;
+  padding: 0 10vw;
+  @media screen and (min-width: $desktop) {
+    padding: 0 15vw;
+  }
   &__logoSection {
     cursor: pointer;
     &__img {

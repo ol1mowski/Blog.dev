@@ -5,15 +5,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  padding: 0 10vw;
   color: $white;
 
   @media screen and (min-width: $small-desktop) {
     height: 100vh;
   }
 
-  @media screen and (min-width: $desktop) {
-    padding: 0 15vw;
+  &__content {
+    padding: 0 10vw;
+    @media screen and (min-width: $desktop) {
+      padding: 0 15vw;
+    }
   }
 
   &__contentSection {
