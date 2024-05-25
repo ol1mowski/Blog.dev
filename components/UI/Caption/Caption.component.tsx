@@ -1,6 +1,6 @@
 import s from "./Caption.component.module.scss";
 
-function Caption({ value, type }: { value: string; type: "main" | "sub" }) {
+function CaptionMain({ value, type }: { value: string; type: "main" | "sub" }) {
   return (
     <>
       {type === "main" ? (
@@ -12,4 +12,4 @@ function Caption({ value, type }: { value: string; type: "main" | "sub" }) {
   );
 }
 
-export default Caption;
+export default CaptionMain;
