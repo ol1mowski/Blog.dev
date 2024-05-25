@@ -1,26 +1,32 @@
-import PostCardComponent from "./PostCardComponent/PostCardComponent.component";
 import s from "./Posts.page.module.scss";
+
+import { POSTS } from "./PostsStaticData";
+import Button from "@/components/UI/Button/Button.component";
+import PostCardComponent from "./PostCardComponent/PostCardComponent.component";
+import Caption from "@/components/UI/Caption/Caption.component";
 
 function Posts() {
   return (
     <section className={s.container}>
       <section className={s.container__header}>
-        <h2 className={s.container__header__content}>Ostatnie Posty</h2>
+        <Caption type="sub" value="Ostatnie Posty" />
       </section>
 
       <section className={s.container__postsWrapper}>
-        <PostCardComponent />
-        <PostCardComponent />
-        <PostCardComponent />
-        <PostCardComponent />
-        <PostCardComponent />
-        <PostCardComponent />
-        <PostCardComponent />
-        <PostCardComponent />
-        <PostCardComponent />
+        {POSTS.map((post) => (
+          <PostCardComponent
+            key={post.id}
+            title={post.title}
+            description={post.description}
+            author={post.author}
+            postImage={post.postImage}
+            authorImage={post.authorImage}
+            date={post.date}
+          />
+        ))}
       </section>
       <section className={s.container__button}>
-        <button className={s.container__button__btn}>Więcej</button>
+        <Button value="Więcej" type="normal" />
       </section>
     </section>
   );

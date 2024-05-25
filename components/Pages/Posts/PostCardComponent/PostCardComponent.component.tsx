@@ -1,10 +1,15 @@
 import Image from "next/image";
 import s from "./PostCardComponent.component.module.scss";
+import { PostCardType } from "@/types/PostType";
 
-import postImage from "@/assets/background_image.jpg";
-import authorImage from "@/assets/background_image.jpg";
-
-function PostCardComponent() {
+function PostCardComponent({
+  title,
+  description,
+  postImage,
+  authorImage,
+  author,
+  date,
+}: PostCardType) {
   return (
     <div className={s.postCard}>
       <div className={s.postCard__imageSection}>
@@ -17,19 +22,8 @@ function PostCardComponent() {
         />
       </div>
       <div className={s.postCard__contentSection}>
-        <h3
-          className={s.postCard__contentSection__title}
-        >
-          Jak Technologia zmienia branże IT ?
-        </h3>
-        <p
-          className={
-            s.postCard__contentSection__description
-          }
-        >
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard
-        </p>
+        <h3 className={s.postCard__contentSection__title}>{title}</h3>
+        <p className={s.postCard__contentSection__description}>{description}</p>
       </div>
 
       <div className={s.postCard__authorSection}>
@@ -40,19 +34,9 @@ function PostCardComponent() {
           width={45}
           height={45}
         />
-        <span
-          className={s.postCard__authorSection__name}
-        >
-          Oliwier Markieiwcz
-        </span>
-        <div
-          className={s.postCard__authorSection__dot}
-        ></div>
-        <span
-          className={s.postCard__authorSection__date}
-        >
-          20 Maj 2024
-        </span>
+        <span className={s.postCard__authorSection__name}>{author}</span>
+        <div className={s.postCard__authorSection__dot}></div>
+        <span className={s.postCard__authorSection__date}>{date}</span>
       </div>
     </div>
   );
