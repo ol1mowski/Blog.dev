@@ -1,8 +1,12 @@
 import s from "./Header.component.module.scss";
 
 import hamburger from "@/assets/hamburger.svg";
+
 import Image, { type StaticImageData } from "next/image";
+
+import { ITEMS } from "./StaticData";
 import Button from "../Button/Button.component";
+import Item from "./Item/Item.component";
 
 function Header({ logo }: { logo: StaticImageData }) {
   return (
@@ -28,39 +32,15 @@ function Header({ logo }: { logo: StaticImageData }) {
 
       <section className={s.headerWrapper__menuList}>
         <section className={s.headerWrapper__menuList__linksWrapper}>
-          <ul
-            className={
-              s.headerWrapper__menuList__linksWrapper__links
-            }
-          >
-            <li
-              className={
-                s.headerWrapper__menuList__linksWrapper__links__link
-              }
-            >
-              Home
-            </li>
-            <li
-              className={
-                s.headerWrapper__menuList__linksWrapper__links__link
-              }
-            >
-              Posty
-            </li>
-            <li
-              className={
-                s.headerWrapper__menuList__linksWrapper__links__link
-              }
-            >
-              Portfolio
-            </li>
-            <li
-              className={
-                s.headerWrapper__menuList__linksWrapper__links__link
-              }
-            >
-              Newsletter
-            </li>
+          <ul className={s.headerWrapper__menuList__linksWrapper__links}>
+            {ITEMS.map((item) => (
+              <Item
+                key={item.id}
+                value={item.value}
+                href={item.href}
+                type={item.type}
+              />
+            ))}
           </ul>
         </section>
         <section className={s.headerWrapper__menuList__findJob}>
