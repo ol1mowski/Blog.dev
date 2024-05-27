@@ -73,7 +73,7 @@ function PostSite() {
         <section className={s.container__tableOfContents}>
           <h3 className={s.container__tableOfContents__caption}>Spis Treści</h3>
           <ul className={s.container__tableOfContents__listItems}>
-            <li className={s.container__tableOfContents__listItems__item}>
+            <li className={`${s.container__tableOfContents__listItems__item} ${s.container__tableOfContents__listItems__item_active}`}>
               Co to jest React ?
             </li>
             <li className={s.container__tableOfContents__listItems__item}>
