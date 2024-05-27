@@ -10,7 +10,7 @@ export const ITEMS: LinkItemsType = [
   {
     id: 2,
     value: "Posty",
-    href: "#posts",
+    href: "/#posts",
     type: "onpage",
   },
   {
@@ -22,7 +22,7 @@ export const ITEMS: LinkItemsType = [
   {
     id: 4,
     value: "Newsletter",
-    href: "#newsletter",
+    href: "/#newsletter",
     type: "onpage",
   },
 ];

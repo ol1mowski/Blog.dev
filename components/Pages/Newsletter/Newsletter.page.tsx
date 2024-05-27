@@ -7,7 +7,7 @@ import Description from "@/components/UI/Description/Description.component";
 
 function Newsletter() {
   return (
-    <section className={s.container}>
+    <section id="newsletter" className={s.container}>
       <section className={s.container__imageSection}>
         <Image
           className={s.container__imageSection__img}

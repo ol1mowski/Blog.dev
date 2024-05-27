@@ -7,7 +7,7 @@ import Caption from "@/components/UI/Caption/Caption.component";
 
 function Posts() {
   return (
-    <section className={s.container}>
+    <section id="posts" className={s.container}>
       <section className={s.container__header}>
         <Caption type="sub" value="Ostatnie Posty" />
       </section>
