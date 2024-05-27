@@ -1,24 +1,31 @@
 import s from "./Header.component.module.scss";
 
-import hamburger from "@/assets/hamburger.svg";
-
 import Image, { type StaticImageData } from "next/image";
 
 import { ITEMS } from "./StaticData";
 import Button from "../Button/Button.component";
 import Item from "./Item/Item.component";
+import Link from "next/link";
 
-function Header({ logo }: { logo: StaticImageData }) {
+function Header({
+  logo,
+  hamburger,
+}: {
+  logo: StaticImageData;
+  hamburger: StaticImageData;
+}) {
   return (
     <header className={s.headerWrapper}>
       <section className={s.headerWrapper__logoSection}>
-        <Image
-          className={s.headerWrapper__logoSection__img}
-          src={logo}
-          alt="Blog's logo"
-          width={150}
-          height={150}
-        />
+        <Link href={"/"}>
+          <Image
+            className={s.headerWrapper__logoSection__img}
+            src={logo}
+            alt="Blog's logo"
+            width={150}
+            height={150}
+          />
+        </Link>
       </section>
 
       <section className={s.headerWrapper__hamburgerMenu}>

@@ -5,11 +5,12 @@ import s from "./HomePage.page.module.scss";
 import logo from "@/assets/logo.svg";
 import Description from "@/components/UI/Description/Description.component";
 import Button from "@/components/UI/Button/Button.component";
+import hamburger from "@/assets/hamburger.svg";
 
 function HomePage() {
   return (
     <section className={s.container}>
-      <Header logo={logo} />
+      <Header logo={logo} hamburger={hamburger}/>
       <section className={s.container__content}>
         <section className={s.container__contentSection}>
           <span className={s.container__contentSection__category}>React</span>

@@ -13,11 +13,12 @@ import postImage from "@/assets/post_image.jpg";
 import categoryIcon from "@/assets/category.svg";
 import calenderIcon from "@/assets/calendar.svg";
 import readingTimeIcon from "@/assets/time.svg";
+import hamburger from '@/assets/hamburger_black.svg';
 
 function PostSite() {
   return (
     <section className={s.container}>
-      <Header logo={headerLogo} />
+      <Header logo={headerLogo} hamburger={hamburger}/>
       <section className={s.container__imageSection}>
         <Image
           className={s.container__imageSection__img}
