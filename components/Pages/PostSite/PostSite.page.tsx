@@ -135,36 +135,48 @@ function PostSite() {
         </section>
         <section className={s.container__similarPosts}>
           <Caption type="sub" value={"Podobne Posty"} />
-          <PostCardComponent
-            title={"Jak Technologia zmienia branże IT ?"}
-            description={
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
-            }
-            author={"Oliwier Markiewicz"}
-            postImage={postImage}
-            authorImage={authorImage}
-            date={"20 Maj 2024"}
-          />
-          <PostCardComponent
-            title={"Jak Technologia zmienia branże IT ?"}
-            description={
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
-            }
-            author={"Oliwier Markiewicz"}
-            postImage={postImage}
-            authorImage={authorImage}
-            date={"20 Maj 2024"}
-          />
-          <PostCardComponent
-            title={"Jak Technologia zmienia branże IT ?"}
-            description={
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
-            }
-            author={"Oliwier Markiewicz"}
-            postImage={postImage}
-            authorImage={authorImage}
-            date={"20 Maj 2024"}
-          />
+          <div className={s.container__similarPosts__posts}>
+            <PostCardComponent
+              title={"Jak Technologia zmienia branże IT ?"}
+              description={
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+              }
+              author={"Oliwier Markiewicz"}
+              postImage={postImage}
+              authorImage={authorImage}
+              date={"20 Maj 2024"}
+            />
+            <PostCardComponent
+              title={"Jak Technologia zmienia branże IT ?"}
+              description={
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+              }
+              author={"Oliwier Markiewicz"}
+              postImage={postImage}
+              authorImage={authorImage}
+              date={"20 Maj 2024"}
+            />
+            <PostCardComponent
+              title={"Jak Technologia zmienia branże IT ?"}
+              description={
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+              }
+              author={"Oliwier Markiewicz"}
+              postImage={postImage}
+              authorImage={authorImage}
+              date={"20 Maj 2024"}
+            />{" "}
+            <PostCardComponent
+              title={"Jak Technologia zmienia branże IT ?"}
+              description={
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+              }
+              author={"Oliwier Markiewicz"}
+              postImage={postImage}
+              authorImage={authorImage}
+              date={"20 Maj 2024"}
+            />
+          </div>
         </section>
       </article>
 
