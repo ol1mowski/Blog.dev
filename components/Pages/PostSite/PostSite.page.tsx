@@ -9,9 +9,9 @@ import Footer from "@/components/UI/Footer/Footer.component.page";
 
 import headerLogo from "@/assets/logo_black.svg";
 import authorImage from "@/assets/background_image.jpg";
-import postImage from "@/assets/background_image.jpg";
+import postImage from "@/assets/post_image.jpg";
 import categoryIcon from "@/assets/category.svg";
-import calenderIcon from "@/assets/category.svg";
+import calenderIcon from "@/assets/calendar.svg";
 import readingTimeIcon from "@/assets/time.svg";
 
 function PostSite() {

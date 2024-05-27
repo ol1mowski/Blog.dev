@@ -2,21 +2,25 @@
 
 .container {
   &__content {
-    padding: 0 10vw;
+    padding: 5vh 10vw;
     @media screen and (min-width: $desktop) {
-      padding: 0 15vw;
+      padding: 5vh 15vw;
     }
   }
   &__imageSection {
-    @include d-flex;
     padding: 0 10vw;
+    padding-top: 7vh;
     @media screen and (min-width: $desktop) {
-      padding: 0 15vw;
+      padding: 0vh 15vw;
+      padding-top: 7vh;
     }
     &__img {
       border-radius: 1rem;
       width: 100%;
-      height: 55vh;
+      height: 35vh;
+      @media screen and (min-width: $big-tablet) {
+        height: 55vh;
+      }
     }
   }
 }
