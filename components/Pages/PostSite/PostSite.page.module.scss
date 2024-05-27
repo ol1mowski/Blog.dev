@@ -10,7 +10,7 @@
   }
   &__imageSection {
     padding: 0 10vw;
-    padding-top: 7vh;
+    padding-top: 3vh;
     @media screen and (min-width: $desktop) {
       padding: 0vh 15vw;
       padding-top: 7vh;
@@ -28,7 +28,10 @@
     @include d-flex-column;
     align-items: flex-start;
     gap: 5vh;
-    margin: 5vh 0;
+    margin: 1vh 0;
+    @media screen and (min-width: $desktop) {
+      width: 70%;
+    }
     &__postInfo {
       @include d-flex;
       gap: 0.5rem;
@@ -81,6 +84,20 @@
       &__item:hover {
         color: $dark-blue;
       }
+    }
+  }
+  &__postContentSection {
+    width: 100%;
+    margin: 5vh 0;
+    &__text {
+      margin-top: 2vh;
+      font-size: 1.25rem;
+      color: $dark-grey;
+      line-height: 3.5vh;
+      font-weight: 300;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 70%;
     }
   }
 }

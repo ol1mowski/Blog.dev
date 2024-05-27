@@ -73,7 +73,9 @@ function PostSite() {
         <section className={s.container__tableOfContents}>
           <h3 className={s.container__tableOfContents__caption}>Spis Treści</h3>
           <ul className={s.container__tableOfContents__listItems}>
-            <li className={`${s.container__tableOfContents__listItems__item} ${s.container__tableOfContents__listItems__item_active}`}>
+            <li
+              className={`${s.container__tableOfContents__listItems__item} ${s.container__tableOfContents__listItems__item_active}`}
+            >
               Co to jest React ?
             </li>
             <li className={s.container__tableOfContents__listItems__item}>
@@ -86,7 +88,7 @@ function PostSite() {
         </section>
         <section className={s.container__postContentSection}>
           <Caption type="sub" value={"Jak React zmienił branże IT ?"} />
-          <p>
+          <p className={s.container__postContentSection__text}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
             facilisis nibh sit amet lectus maximus, ac sollicitudin massa
             fermentum. Vestibulum tempus eros sed pretium convallis. Fusce eget
@@ -101,7 +103,7 @@ function PostSite() {
             Vivamus cursus libero non consectetur ultricies.
           </p>
           <br />{" "}
-          <p>
+          <p className={s.container__postContentSection__text}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
             facilisis nibh sit amet lectus maximus, ac sollicitudin massa
             fermentum. Vestibulum tempus eros sed pretium convallis. Fusce eget
@@ -116,7 +118,7 @@ function PostSite() {
             Vivamus cursus libero non consectetur ultricies.
           </p>
           <br />
-          <p>
+          <p className={s.container__postContentSection__text}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
             facilisis nibh sit amet lectus maximus, ac sollicitudin massa
             fermentum. Vestibulum tempus eros sed pretium convallis. Fusce eget
