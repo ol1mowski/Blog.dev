@@ -13,12 +13,12 @@ import postImage from "@/assets/post_image.jpg";
 import categoryIcon from "@/assets/category.svg";
 import calenderIcon from "@/assets/calendar.svg";
 import readingTimeIcon from "@/assets/time.svg";
-import hamburger from '@/assets/hamburger_black.svg';
+import hamburger from "@/assets/hamburger_black.svg";
 
 function PostSite() {
   return (
     <section className={s.container}>
-      <Header logo={headerLogo} hamburger={hamburger}/>
+      <Header logo={headerLogo} hamburger={hamburger} />
       <section className={s.container__imageSection}>
         <Image
           className={s.container__imageSection__img}
@@ -139,6 +139,7 @@ function PostSite() {
           <div className={s.container__similarPosts__posts}>
             <PostCardComponent
               title={"Jak Technologia zmienia branże IT ?"}
+              slug="jak-technologia-zmienia-branze-it"
               description={
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
               }
@@ -149,6 +150,7 @@ function PostSite() {
             />
             <PostCardComponent
               title={"Jak Technologia zmienia branże IT ?"}
+              slug="jak-technologia-zmienia-branze-it"
               description={
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
               }
@@ -159,6 +161,7 @@ function PostSite() {
             />
             <PostCardComponent
               title={"Jak Technologia zmienia branże IT ?"}
+              slug="jak-technologia-zmienia-branze-it"
               description={
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
               }
@@ -169,6 +172,7 @@ function PostSite() {
             />{" "}
             <PostCardComponent
               title={"Jak Technologia zmienia branże IT ?"}
+              slug="jak-technologia-zmienia-branze-it"
               description={
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
               }

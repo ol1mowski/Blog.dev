@@ -17,6 +17,7 @@ function Posts() {
           <PostCardComponent
             key={post.id}
             title={post.title}
+            slug={post.slug}
             description={post.description}
             author={post.author}
             postImage={post.postImage}
