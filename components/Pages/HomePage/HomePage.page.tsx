@@ -6,11 +6,12 @@ import logo from "@/assets/logo.svg";
 import Description from "@/components/UI/Description/Description.component";
 import Button from "@/components/UI/Button/Button.component";
 import hamburger from "@/assets/hamburger.svg";
+import Link from "next/link";
 
 function HomePage() {
   return (
     <section className={s.container}>
-      <Header logo={logo} hamburger={hamburger}/>
+      <Header logo={logo} hamburger={hamburger} />
       <section className={s.container__content}>
         <section className={s.container__contentSection}>
           <span className={s.container__contentSection__category}>React</span>
@@ -22,7 +23,9 @@ function HomePage() {
             value="Tutaj podzielę się z wami najlepszymi kursami i ksiązkami o tematyce
       tworzenia stron internetowych. Koniecznie musisz je znać"
           />
-          <Button type="normal" value={'Czytaj'}/>
+          <Link href={`/posty/jak-technologia-zmienia-branze-it`}>
+            <Button type="normal" value={"Czytaj"} />
+          </Link>
         </section>
       </section>
     </section>
