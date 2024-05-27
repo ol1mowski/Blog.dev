@@ -18,7 +18,13 @@ function YTSection() {
           najnowocześniejsze rozwiązania w branży, praktyczne porady i wiele
           więcej."
         />
-        <Button type="yt" value="Odwiedź" />
+        <a
+          href="https://www.youtube.com/channel/UCTNFKRALTZoSQS6mDOuDs2Q"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button type="yt" value="Odwiedź" />
+        </a>
       </section>
       <section className={s.container__imageSection}>
         <Image
