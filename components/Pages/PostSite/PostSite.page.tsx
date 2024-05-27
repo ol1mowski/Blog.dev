@@ -158,17 +158,6 @@ function PostSite() {
               postImage={postImage}
               authorImage={authorImage}
               date={"20 Maj 2024"}
-            />
-            <PostCardComponent
-              title={"Jak Technologia zmienia branże IT ?"}
-              slug="jak-technologia-zmienia-branze-it"
-              description={
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
-              }
-              author={"Oliwier Markiewicz"}
-              postImage={postImage}
-              authorImage={authorImage}
-              date={"20 Maj 2024"}
             />{" "}
             <PostCardComponent
               title={"Jak Technologia zmienia branże IT ?"}
