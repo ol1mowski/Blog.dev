@@ -51,7 +51,13 @@ function Header({
           </ul>
         </section>
         <section className={s.headerWrapper__menuList__findJob}>
-          <Button type="normal" value="Oferty Pracy" />
+          <a
+            href="https://justjoin.it/all-locations/javascript"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button type="normal" value="Oferty Pracy" />
+          </a>
         </section>
       </section>
     </header>
