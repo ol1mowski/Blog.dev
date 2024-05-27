@@ -19,7 +19,13 @@ function PostSite() {
     <section className={s.container}>
       <Header logo={headerLogo} />
       <section className={s.container__imageSection}>
-        <Image className={s.container__imageSection__img} src={postImage} alt="post image" height={450} width={800} />
+        <Image
+          className={s.container__imageSection__img}
+          src={postImage}
+          alt="post image"
+          height={450}
+          width={800}
+        />
       </section>
       <article className={s.container__content}>
         <section className={s.container__headerSection}>
@@ -30,8 +36,9 @@ function PostSite() {
             <Image
               src={authorImage}
               alt="author's avatar"
-              width={45}
-              height={45}
+              width={40}
+              height={40}
+              className={s.container__headerSection__postInfo__avatar}
             />
             <span className={s.container__headerSection__postInfo__info}>
               Oliwier Markiewicz
