@@ -15,7 +15,7 @@ function ScrollLink({
   const scrollToElementStart = (
     element: HTMLElement,
     duration: number = 1000,
-    offset: string = "25vh"
+    offset: string = "1vh"
   ) => {
     const startPosition = window.pageYOffset;
     const targetPosition =
@@ -64,7 +64,6 @@ function ScrollLink({
   return (
     <a
       onClick={handleScroll}
-      className={className}
       href={link}
       aria-label={`Learn more about ${title}`}
       rel="noopener noreferrer"

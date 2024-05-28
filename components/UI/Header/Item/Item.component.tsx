@@ -1,5 +1,6 @@
 import Link from "next/link";
 import s from "./Item.component.module.scss";
+import ScrollLink from "@/components/utils/ScrollLink.component";
 
 function Item({
   href,
@@ -13,9 +14,9 @@ function Item({
   return (
     <>
       {type === "onpage" ? (
-        <a href={href}>
+        <ScrollLink link={href} title={value}>
           <li className={s.item}>{value}</li>
-        </a>
+        </ScrollLink>
       ) : (
         <Link href={href}>
           <li className={s.item}>{value}</li>

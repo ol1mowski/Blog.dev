@@ -10,19 +10,19 @@ export const ITEMS: LinkItemsType = [
   {
     id: 2,
     value: "Posty",
-    href: "/#posts",
+    href: "#posts",
     type: "onpage",
   },
   {
     id: 3,
     value: "Portfolio",
     href: "https://oliwiermarkiewicz.netlify.app/",
-    type: "onpage",
+    type: "outpage",
   },
   {
     id: 4,
     value: "Newsletter",
-    href: "/#newsletter",
+    href: "#newsletter",
     type: "onpage",
   },
 ];
