@@ -9,7 +9,6 @@ function page() {
     <>
       <Header logo={logo} hamburger={hamburger}/>
       <Privacy />
-      <Footer />
     </>
   );
 }

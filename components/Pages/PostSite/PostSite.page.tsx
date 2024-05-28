@@ -173,8 +173,6 @@ function PostSite() {
           </div>
         </section>
       </article>
-
-      <Footer />
     </section>
   );
 }

@@ -11,7 +11,6 @@ export default function Home() {
       <YTSection />
       <Posts />
       <Newsletter />
-      <Footer />
     </>
   );
 }
