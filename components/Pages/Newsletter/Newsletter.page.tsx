@@ -2,8 +2,8 @@ import Image from "next/image";
 import s from "./Newsletter.module.scss";
 
 import newsletterImage from "@/assets/newsletter_image.svg";
-import arrowIcon from "@/assets/arrow.png";
 import Description from "@/components/UI/Description/Description.component";
+import Form from "@/components/UI/Form/Form.component";
 import { saveClientEmail } from "@/actions/SaveClientEmail";
 
 function Newsletter() {
@@ -31,21 +31,7 @@ function Newsletter() {
           najnowocześniejsze rozwiązania w branży, praktyczne porady i wiele
           więcej."
         />
-        <form
-          className={s.container__contentSection__form}
-          action={saveClientEmail}
-          method="POST"
-        >
-          <input
-            className={s.container__contentSection__form__inp}
-            type="text"
-            name="email"
-            placeholder="Twój email"
-          />
-          <button className={s.container__contentSection__form__btn}>
-            <Image src={arrowIcon} alt="arrow icon" width={25} height={25} />
-          </button>
-        </form>
+        <Form action={saveClientEmail}/>
       </section>
     </section>
   );
