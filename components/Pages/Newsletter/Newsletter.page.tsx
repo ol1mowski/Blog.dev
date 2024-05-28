@@ -4,6 +4,7 @@ import s from "./Newsletter.module.scss";
 import newsletterImage from "@/assets/newsletter_image.svg";
 import arrowIcon from "@/assets/arrow.png";
 import Description from "@/components/UI/Description/Description.component";
+import { saveClientEmail } from "@/actions/SaveClientEmail";
 
 function Newsletter() {
   return (
@@ -32,7 +33,7 @@ function Newsletter() {
         />
         <form
           className={s.container__contentSection__form}
-          action="/"
+          action={saveClientEmail}
           method="POST"
         >
           <input
