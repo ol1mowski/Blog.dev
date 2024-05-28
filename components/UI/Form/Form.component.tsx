@@ -22,13 +22,13 @@ function Form({ action }: { action: (formData: FormData) => Promise<void> }) {
 
     try {
       await action(formData);
-      setSuccess("[+] Success");
+      setSuccess("[+] Zapisano do Newslettera ☺️");
       if (inp.current) {
         inp.current.value = "";
       }
     } catch (err) {
       setError(
-        "[-] Adding to newsletter failed, email was not saved. Please try again later."
+        "[-] Zapis do Newslettera zakończył się niepowodzeniem, Sprobuj ponownie poźniej"
       );
     } finally {
       setIsPending(false);

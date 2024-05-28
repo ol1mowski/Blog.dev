@@ -44,49 +44,6 @@
       }
     }
   }
-  &__tableOfContents {
-    position: absolute;
-    top: 10vh;
-    right: 15vw;
-    @include d-flex-column;
-    align-items: flex-start;
-    display: none;
-    box-shadow: $box-shadow;
-    padding: 1.5rem;
-    border-radius: 0.7rem;
-    @media screen and (min-width: $desktop) {
-      display: flex;
-    }
-    &__caption {
-      font-family: "Roboto", sans-serif;
-      font-weight: 500;
-      font-style: normal;
-      font-size: 1.4rem;
-      line-height: 5vh;
-      @media screen and (min-width: $tablet) {
-        font-size: 1.7rem;
-      }
-    }
-    &__listItems {
-      margin-top: 2vh;
-      @include d-flex-column;
-      align-items: flex-start;
-      gap: 0.3rem;
-      &__item {
-        cursor: pointer;
-        font-size: 1rem;
-        color: $dark-grey;
-        transition: color, 0.7s;
-        will-change: color;
-      }
-      &__item_active {
-        color: $dark-blue;
-      }
-      &__item:hover {
-        color: $dark-blue;
-      }
-    }
-  }
   &__postContentSection {
     width: 100%;
     margin: 5vh 0;
@@ -94,7 +51,7 @@
       margin-top: 5vh;
       font-size: 1.25rem;
       color: $dark-grey;
-      line-height: 3.5vh;
+      line-height: 4vh;
       font-weight: 300;
     }
     @media screen and (min-width: $desktop) {

@@ -14,6 +14,7 @@ import categoryIcon from "@/assets/category.svg";
 import calenderIcon from "@/assets/calendar.svg";
 import readingTimeIcon from "@/assets/time.svg";
 import hamburger from "@/assets/hamburger_black.svg";
+import TableOfContents from "@/components/UI/TableOfContents/TableOfContents.component";
 
 function PostSite() {
   return (
@@ -71,22 +72,7 @@ function PostSite() {
             </span>
           </div>
         </section>
-        <section className={s.container__tableOfContents}>
-          <h3 className={s.container__tableOfContents__caption}>Spis Treści</h3>
-          <ul className={s.container__tableOfContents__listItems}>
-            <li
-              className={`${s.container__tableOfContents__listItems__item} ${s.container__tableOfContents__listItems__item_active}`}
-            >
-              Co to jest React ?
-            </li>
-            <li className={s.container__tableOfContents__listItems__item}>
-              Czy warto go używać ?
-            </li>
-            <li className={s.container__tableOfContents__listItems__item}>
-              Najważniejsze Informacje
-            </li>
-          </ul>
-        </section>
+        <TableOfContents />
         <section className={s.container__postContentSection}>
           <Caption type="sub" value={"Jak React zmienił branże IT ?"} />
           <p className={s.container__postContentSection__text}>
