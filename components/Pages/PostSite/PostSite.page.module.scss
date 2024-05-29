@@ -44,20 +44,7 @@
       }
     }
   }
-  &__postContentSection {
-    width: 100%;
-    margin: 5vh 0;
-    &__text {
-      margin-top: 5vh;
-      font-size: 1.25rem;
-      color: $dark-grey;
-      line-height: 4vh;
-      font-weight: 300;
-    }
-    @media screen and (min-width: $desktop) {
-      width: 70%;
-    }
-  }
+
   &__similarPosts {
     margin-bottom: 5vh;
     &__posts {

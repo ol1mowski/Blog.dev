@@ -15,6 +15,8 @@ import calenderIcon from "@/assets/calendar.svg";
 import readingTimeIcon from "@/assets/time.svg";
 import hamburger from "@/assets/hamburger_black.svg";
 import TableOfContents from "@/components/UI/TableOfContents/TableOfContents.component";
+import PostArticle from "@/components/UI/PostArticle/PostArticle.component";
+import { POSTS_CONTENT } from "./PostContent.data";
 
 function PostSite() {
   return (
@@ -73,53 +75,7 @@ function PostSite() {
           </div>
         </section>
         <TableOfContents />
-        <section className={s.container__postContentSection}>
-          <Caption type="sub" value={"Jak React zmienił branże IT ?"} />
-          <p className={s.container__postContentSection__text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            facilisis nibh sit amet lectus maximus, ac sollicitudin massa
-            fermentum. Vestibulum tempus eros sed pretium convallis. Fusce eget
-            pretium tortor. Nulla consectetur ligula eget felis mattis, vel
-            consectetur metus venenatis. Suspendisse potenti. Orci varius
-            natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. Pellentesque in ante eleifend mauris congue accumsan.
-            Sed in ipsum malesuada, feugiat nisl nec, sagittis diam. Sed
-            pulvinar tincidunt interdum. Donec blandit velit ac ante luctus,
-            eget pellentesque nisl cursus. Duis convallis sollicitudin nisi, vel
-            cursus nunc elementum quis. Phasellus pharetra aliquet bibendum.
-            Vivamus cursus libero non consectetur ultricies.
-          </p>
-          <br />{" "}
-          <p className={s.container__postContentSection__text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            facilisis nibh sit amet lectus maximus, ac sollicitudin massa
-            fermentum. Vestibulum tempus eros sed pretium convallis. Fusce eget
-            pretium tortor. Nulla consectetur ligula eget felis mattis, vel
-            consectetur metus venenatis. Suspendisse potenti. Orci varius
-            natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. Pellentesque in ante eleifend mauris congue accumsan.
-            Sed in ipsum malesuada, feugiat nisl nec, sagittis diam. Sed
-            pulvinar tincidunt interdum. Donec blandit velit ac ante luctus,
-            eget pellentesque nisl cursus. Duis convallis sollicitudin nisi, vel
-            cursus nunc elementum quis. Phasellus pharetra aliquet bibendum.
-            Vivamus cursus libero non consectetur ultricies.
-          </p>
-          <br />
-          <p className={s.container__postContentSection__text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            facilisis nibh sit amet lectus maximus, ac sollicitudin massa
-            fermentum. Vestibulum tempus eros sed pretium convallis. Fusce eget
-            pretium tortor. Nulla consectetur ligula eget felis mattis, vel
-            consectetur metus venenatis. Suspendisse potenti. Orci varius
-            natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. Pellentesque in ante eleifend mauris congue accumsan.
-            Sed in ipsum malesuada, feugiat nisl nec, sagittis diam. Sed
-            pulvinar tincidunt interdum. Donec blandit velit ac ante luctus,
-            eget pellentesque nisl cursus. Duis convallis sollicitudin nisi, vel
-            cursus nunc elementum quis. Phasellus pharetra aliquet bibendum.
-            Vivamus cursus libero non consectetur ultricies.
-          </p>
-        </section>
+        { POSTS_CONTENT.map(item => <PostArticle key={item.id} title={item.title} description={item.description} />) }
         <section className={s.container__similarPosts}>
           <Caption type="sub" value={"Podobne Posty"} />
           <div className={s.container__similarPosts__posts}>
