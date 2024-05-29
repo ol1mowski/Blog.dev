@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import s from "./PostSite.page.module.scss";
 
@@ -19,15 +19,17 @@ import TableOfContents from "@/components/UI/TableOfContents/TableOfContents.com
 import PostArticle from "@/components/UI/PostArticle/PostArticle.component";
 import { POSTS_CONTENT } from "./PostContent.data";
 import useElementVisible from "@/hooks/useElementVisible.hook";
-import { useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
+import PostVisibleContext from "@/store/PostVisible.context";
 
 function PostSite() {
   const [isVisible, ref] = useElementVisible();
 
+  const [isSimilarPostsVisible, setSimilarPostsVisible] =
+    useState<boolean>(true);
+
   useEffect(() => {
-    console.log(
-      isVisible ? "Element jest widoczny" : "Element nie jest widoczny"
-    );
+    isVisible ? setSimilarPostsVisible(true) : setSimilarPostsVisible(false);
   }, [isVisible]);
 
   return (
@@ -85,7 +87,7 @@ function PostSite() {
             </span>
           </div>
         </section>
-        <TableOfContents />
+        {isSimilarPostsVisible ? null : <TableOfContents />}
         {POSTS_CONTENT.map((item) => (
           <PostArticle
             key={item.id}
