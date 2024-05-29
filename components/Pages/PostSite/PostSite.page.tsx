@@ -1,3 +1,5 @@
+'use client'
+
 import s from "./PostSite.page.module.scss";
 
 import Image from "next/image";
@@ -5,7 +7,6 @@ import Image from "next/image";
 import Header from "@/components/UI/Header/Header.component.page";
 import Caption from "@/components/UI/Caption/Caption.component";
 import PostCardComponent from "@/components/Pages/Posts/PostCardComponent/PostCardComponent.component";
-import Footer from "@/components/UI/Footer/Footer.component.page";
 
 import headerLogo from "@/assets/logo_black.svg";
 import authorImage from "@/assets/background_image.jpg";
@@ -17,8 +18,18 @@ import hamburger from "@/assets/hamburger_black.svg";
 import TableOfContents from "@/components/UI/TableOfContents/TableOfContents.component";
 import PostArticle from "@/components/UI/PostArticle/PostArticle.component";
 import { POSTS_CONTENT } from "./PostContent.data";
+import useElementVisible from "@/hooks/useElementVisible.hook";
+import { useEffect } from "react";
 
 function PostSite() {
+  const [isVisible, ref] = useElementVisible();
+
+  useEffect(() => {
+    console.log(
+      isVisible ? "Element jest widoczny" : "Element nie jest widoczny"
+    );
+  }, [isVisible]);
+
   return (
     <section className={s.container}>
       <Header logo={headerLogo} hamburger={hamburger} />
@@ -75,8 +86,15 @@ function PostSite() {
           </div>
         </section>
         <TableOfContents />
-        { POSTS_CONTENT.map(item => <PostArticle key={item.id} slug={item.slug} title={item.title} description={item.description} />) }
-        <section className={s.container__similarPosts}>
+        {POSTS_CONTENT.map((item) => (
+          <PostArticle
+            key={item.id}
+            slug={item.slug}
+            title={item.title}
+            description={item.description}
+          />
+        ))}
+        <section ref={ref} className={s.container__similarPosts}>
           <Caption type="sub" value={"Podobne Posty"} />
           <div className={s.container__similarPosts__posts}>
             <PostCardComponent

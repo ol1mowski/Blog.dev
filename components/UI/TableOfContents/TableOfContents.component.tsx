@@ -21,6 +21,7 @@ function TableOfContents() {
       }
     }
   };
+  
 
   useEffect(() => {
     addEventListener("scroll", handleScroll);
