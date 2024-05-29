@@ -75,7 +75,7 @@ function PostSite() {
           </div>
         </section>
         <TableOfContents />
-        { POSTS_CONTENT.map(item => <PostArticle key={item.id} title={item.title} description={item.description} />) }
+        { POSTS_CONTENT.map(item => <PostArticle key={item.id} slug={item.slug} title={item.title} description={item.description} />) }
         <section className={s.container__similarPosts}>
           <Caption type="sub" value={"Podobne Posty"} />
           <div className={s.container__similarPosts__posts}>

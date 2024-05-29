@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
 import Footer from "@/components/UI/Footer/Footer.component.page";
+import Root from "./root";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,11 +17,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl-PL">
-      <body className={inter.className}>
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <Root children={children} />
   );
 }

@@ -2,7 +2,57 @@ export const POSTS_CONTENT = [
   {
     id: 1,
     title: "Co to jest React ?",
+    slug: "co-to-jest-react",
     description: `React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
         inżynierów z Facebooka, która jest używana do budowania interfejsów
         użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
         single-page applications). Umożliwia tworzenie dużych aplikacji
@@ -14,18 +64,147 @@ export const POSTS_CONTENT = [
   {
     id: 2,
     title: "Jak używać Hooks ?",
-    description: `
+    slug: "jak-uzywac-hooks",
+    description: `React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.
 React Hooks to specjalne funkcje, które pozwalają na używanie stanu oraz innych funkcji Reacta w komponentach funkcyjnych. Wprowadzone w wersji 16.8, Hooks stanowią alternatywę dla klasycznych komponentów klasowych, umożliwiając zarządzanie stanem, efektami ubocznymi i innymi aspektami Reacta w bardziej wydajny i łatwy sposób. Poniżej przedstawię podstawowe informacje o najważniejszych Hooksach, takich jak useState, useEffect, useContext, oraz jak można ich używać.`,
   },
   {
     id: 3,
     title: "Zarządzanie stanem",
-    description: `Zarządzanie stanem w aplikacjach React jest kluczowym aspektem, który pozwala na kontrolowanie danych i ich przepływu w aplikacji. Istnieje kilka różnych podejść i narzędzi, które możemy wykorzystać do zarządzania stanem, w zależności od skomplikowania i rozmiaru naszej aplikacji.`,
+    slug: "zarzadzanie-stanem",
+    description: `React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.Zarządzanie stanem w aplikacjach React jest kluczowym aspektem, który pozwala na kontrolowanie danych i ich przepływu w aplikacji. Istnieje kilka różnych podejść i narzędzi, które możemy wykorzystać do zarządzania stanem, w zależności od skomplikowania i rozmiaru naszej aplikacji.`,
   },
   {
     id: 4,
     title: "Advanced Patterns",
-    description: `Zarządzanie stanem w zaawansowanych aplikacjach React może być skomplikowane, ale istnieje kilka wzorców projektowych, które pomagają uporządkować ten proces. Oto teoria za kilkoma z tych zaawansowanych wzorców:
+    slug: "advanced-patterns",
+    description: `React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.React to popularna biblioteka języka JavaScript, stworzona przez
+        inżynierów z Facebooka, która jest używana do budowania interfejsów
+        użytkownika, szczególnie w jednostronicowych aplikacjach (ang.
+        single-page applications). Umożliwia tworzenie dużych aplikacji
+        internetowych, które mogą zmieniać dane wyświetlane na ekranie bez
+        konieczności przeładowywania strony. Główną zaletą Reacta jest skupienie
+        na składnikach (ang. components), co pozwala na łatwe zarządzanie stanem
+        i reużywanie kodu.Zarządzanie stanem w zaawansowanych aplikacjach React może być skomplikowane, ale istnieje kilka wzorców projektowych, które pomagają uporządkować ten proces. Oto teoria za kilkoma z tych zaawansowanych wzorców:
 
 1. Compound Components
 Compound Components to wzorzec, który pozwala na tworzenie bardziej złożonych interfejsów poprzez zgrupowanie wielu komponentów, które dzielą logikę stanu. Pozwala to na zachowanie odpowiedniej elastyczności i reużywalności, jednocześnie zapewniając silną korelację między poszczególnymi częściami komponentu.
