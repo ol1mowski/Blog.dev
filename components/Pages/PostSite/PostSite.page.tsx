@@ -6,7 +6,6 @@ import Image from "next/image";
 
 import Header from "@/components/UI/Header/Header.component.page";
 import Caption from "@/components/UI/Caption/Caption.component";
-import PostCardComponent from "@/components/Pages/Posts/PostCardComponent/PostCardComponent.component";
 
 import headerLogo from "@/assets/logo_black.svg";
 import authorImage from "@/assets/background_image.jpg";
@@ -19,11 +18,11 @@ import TableOfContents from "@/components/UI/TableOfContents/TableOfContents.com
 import PostArticle from "@/components/UI/PostArticle/PostArticle.component";
 import { POSTS_CONTENT } from "./PostContent.data";
 import useElementVisible from "@/hooks/useElementVisible.hook";
-import { useContext, useEffect, useState } from "react";
-import PostVisibleContext from "@/store/PostVisible.context";
+import { useEffect, useState } from "react";
+import SimilarPosts from "@/components/UI/SimilarPosts/SimilarPosts.component";
 
 function PostSite() {
-  const [isVisible, ref] = useElementVisible();
+  const [isVisible, reference] = useElementVisible();
 
   const [isSimilarPostsVisible, setSimilarPostsVisible] =
     useState<boolean>(true);
@@ -96,44 +95,7 @@ function PostSite() {
             description={item.description}
           />
         ))}
-        <section ref={ref} className={s.container__similarPosts}>
-          <Caption type="sub" value={"Podobne Posty"} />
-          <div className={s.container__similarPosts__posts}>
-            <PostCardComponent
-              title={"Jak Technologia zmienia branże IT ?"}
-              slug="jak-technologia-zmienia-branze-it"
-              description={
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
-              }
-              author={"Oliwier Markiewicz"}
-              postImage={postImage}
-              authorImage={authorImage}
-              date={"20 Maj 2024"}
-            />
-            <PostCardComponent
-              title={"Jak Technologia zmienia branże IT ?"}
-              slug="jak-technologia-zmienia-branze-it"
-              description={
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
-              }
-              author={"Oliwier Markiewicz"}
-              postImage={postImage}
-              authorImage={authorImage}
-              date={"20 Maj 2024"}
-            />{" "}
-            <PostCardComponent
-              title={"Jak Technologia zmienia branże IT ?"}
-              slug="jak-technologia-zmienia-branze-it"
-              description={
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
-              }
-              author={"Oliwier Markiewicz"}
-              postImage={postImage}
-              authorImage={authorImage}
-              date={"20 Maj 2024"}
-            />
-          </div>
-        </section>
+      <SimilarPosts ref={reference} />
       </article>
     </section>
   );

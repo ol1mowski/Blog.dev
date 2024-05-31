@@ -1,0 +1,14 @@
+@import "@/style/index.scss";
+
+.similarPosts {
+  margin-bottom: 5vh;
+  &__posts {
+    margin-top: 5vh;
+    @include d-flex-column;
+    gap: 3rem;
+    @media screen and (min-width: $desktop) {
+      @include d-flex;
+      justify-content: flex-start;
+    }
+  }
+}
