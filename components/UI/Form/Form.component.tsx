@@ -1,40 +1,21 @@
-"use client";
-
+import { RefObject } from "react";
 import s from "./Form.component.module.scss";
 import Image from "next/image";
 import arrowIcon from "@/assets/arrow.png";
-import { useRef, useState } from "react";
 
-function Form({ action }: { action: (formData: FormData) => Promise<void> }) {
-  const [isPending, setIsPending] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [success, setSuccess] = useState<string | null>(null);
-
-  const inp = useRef<HTMLInputElement>(null);
-
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setIsPending(true);
-    setError(null);
-    setSuccess(null);
-
-    const formData = new FormData(event.currentTarget);
-
-    try {
-      await action(formData);
-      setSuccess("[+] Zapisano do Newslettera ☺️");
-      if (inp.current) {
-        inp.current.value = "";
-      }
-    } catch (err) {
-      setError(
-        "[-] Zapis do Newslettera zakończył się niepowodzeniem, Sprobuj ponownie poźniej"
-      );
-    } finally {
-      setIsPending(false);
-    }
-  };
-
+function FormComponent({
+  handleSubmit,
+  inp,
+  success,
+  isPending,
+  error,
+}: {
+  handleSubmit: (event: React.FormEvent<HTMLFormElement>) => Promise<void>;
+  inp: RefObject<HTMLInputElement>;
+  isPending: boolean;
+  success: string | null;
+  error: string | null;
+}) {
   return (
     <>
       <form className={s.form} onSubmit={handleSubmit}>
@@ -56,4 +37,4 @@ function Form({ action }: { action: (formData: FormData) => Promise<void> }) {
   );
 }
 
-export default Form;
+export default FormComponent;

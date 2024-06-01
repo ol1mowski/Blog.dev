@@ -3,6 +3,9 @@
 import s from "./PostSite.page.module.scss";
 
 import Image from "next/image";
+import { useEffect, useState } from "react";
+
+import { POSTS_CONTENT } from "./PostContent.data";
 
 import Header from "@/components/UI/Header/Header.component.page";
 import Caption from "@/components/UI/Caption/Caption.component";
@@ -14,11 +17,11 @@ import categoryIcon from "@/assets/category.svg";
 import calenderIcon from "@/assets/calendar.svg";
 import readingTimeIcon from "@/assets/time.svg";
 import hamburger from "@/assets/hamburger_black.svg";
+
+import useElementVisible from "@/hooks/useElementVisible.hook";
+
 import TableOfContents from "@/components/UI/TableOfContents/TableOfContents.component";
 import PostArticle from "@/components/UI/PostArticle/PostArticle.component";
-import { POSTS_CONTENT } from "./PostContent.data";
-import useElementVisible from "@/hooks/useElementVisible.hook";
-import { useEffect, useState } from "react";
 import SimilarPosts from "@/components/UI/SimilarPosts/SimilarPosts.component";
 
 function PostSite() {
@@ -95,7 +98,7 @@ function PostSite() {
             description={item.description}
           />
         ))}
-      <SimilarPosts ref={reference} />
+        <SimilarPosts ref={reference} />
       </article>
     </section>
   );
