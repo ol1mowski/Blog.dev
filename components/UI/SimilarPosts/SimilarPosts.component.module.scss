@@ -1,14 +1,11 @@
 @import "@/style/index.scss";
 
 .similarPosts {
-  margin-bottom: 5vh;
+  margin-bottom: 15vh;
   &__posts {
-    margin-top: 5vh;
-    @include d-flex-column;
-    gap: 3rem;
-    @media screen and (min-width: $desktop) {
-      @include d-flex;
-      justify-content: flex-start;
-    }
+    margin-top: 7vh;
+    @include d-flex;
+    flex-wrap: wrap;
+    gap: 4rem;
   }
 }
