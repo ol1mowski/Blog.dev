@@ -3,12 +3,13 @@
 .container {
   padding: 5rem 10vw;
   @include d-flex-column;
-  gap: 5rem;
   color: $dark;
+  gap: 2rem;
   @media screen and (min-width: $desktop) {
     flex-direction: row;
     justify-content: space-between;
     padding: 5rem 15vw;
+    gap: 5vw;
   }
   &__contentSection {
     margin-top: 10vh;

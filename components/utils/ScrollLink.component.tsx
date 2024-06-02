@@ -3,7 +3,6 @@ import { type ReactNode, type MouseEvent } from "react";
 
 function ScrollLink({
   link,
-  className,
   title,
   children,
 }: {
