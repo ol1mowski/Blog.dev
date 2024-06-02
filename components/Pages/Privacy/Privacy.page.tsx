@@ -7,7 +7,7 @@ function Privacy() {
       <Caption type="sub" value="Polityka Prywatności" />
       <section className={s.container__content}>
         <Caption type="sub" value="1. Informacje Ogólne" /> <br />
-        <ol>
+        <ol className={s.container__content__ol}>
           <li>
             Niniejsza polityka dotyczy Serwisu www, funkcjonującego pod adresem
             url: <b>oliwiermarkiewicz.netlify.app</b>
@@ -35,7 +35,7 @@ function Privacy() {
           <li>
             Serwis realizuje funkcje pozyskiwania informacji o użytkownikach i
             ich zachowaniu w następujący sposób:
-            <ol>
+            <ol className={s.container__content__ol}>
               <li>
                 Poprzez dobrowolnie wprowadzone w formularzach dane, które
                 zostają wprowadzone do systemów Operatora.
@@ -53,7 +53,7 @@ function Privacy() {
           value="2. Wybrane metody ochrony danych stosowane przez Operatora"
         />
         <br />
-        <ol>
+        <ol className={s.container__content__ol}>
           <li>
             Miejsca logowania i wprowadzania danych osobowych są chronione w
             warstwie transmisji (certyfikat SSL). Dzięki temu dane osobowe i
@@ -75,7 +75,7 @@ function Privacy() {
         <br />
         <Caption type="sub" value="3. Hosting" />
         <br />
-        <ol>
+        <ol className={s.container__content__ol}>
           <li>
             Serwis jest hostowany (technicznie utrzymywany) na serwerach
             operatora: Netlify
@@ -124,7 +124,7 @@ function Privacy() {
             danych"
         />
         <br />
-        <ol>
+        <ol className={s.container__content__ol}>
           <li>
             W niektórych sytuacjach Administrator ma prawo przekazywać Twoje
             dane osobowe innym odbiorcom, jeśli będzie to niezbędne do wykonania
@@ -201,7 +201,7 @@ function Privacy() {
         <br />
         <Caption type="sub" value=" 5. Informacje w formularzach" />
         <br />
-        <ol>
+        <ol className={s.container__content__ol}>
           <li>
             Serwis zbiera informacje podane dobrowolnie przez użytkownika, w tym
             dane osobowe, o ile zostaną one podane.
@@ -227,7 +227,7 @@ function Privacy() {
         <br />
         <Caption type="sub" value="6. Logi Administratora" />
         <br />
-        <ol>
+        <ol className={s.container__content__ol}>
           <li>
             Informacje zachowaniu użytkowników w serwisie mogą podlegać
             logowaniu. Dane te są wykorzystywane w celu administrowania
@@ -237,7 +237,7 @@ function Privacy() {
         <br />
         <Caption type="sub" value="7. Istotne techniki marketingowe" />
         <br />
-        <ol>
+        <ol className={s.container__content__ol}>
           <li>
             Operator stosuje analizę statystyczną ruchu na stronie, poprzez
             Google Analytics (Google Inc. z siedzibą w USA). Operator nie
@@ -289,7 +289,7 @@ function Privacy() {
         <br />
         <Caption type="sub" value="8. Informacja o plikach cookies" />
         <br />
-        <ol>
+        <ol className={s.container__content__ol}>
           <li>Serwis korzysta z plików cookies.</li>
           <li>
             Pliki cookies (tzw. „ciasteczka”) stanowią dane informatyczne, w
@@ -305,7 +305,7 @@ function Privacy() {
           </li>
           <li>
             Pliki cookies wykorzystywane są w następujących celach:
-            <ol>
+            <ol className={s.container__content__ol}>
               <li>
                 utrzymanie sesji użytkownika Serwisu (po zalogowaniu), dzięki
                 której użytkownik nie musi na każdej podstronie Serwisu ponownie
@@ -354,7 +354,7 @@ function Privacy() {
           value=" 9. Zarządzanie plikami cookies – jak w praktyce wyrażać i cofać zgodę?"
         />
         <br />
-        <ol>
+        <ol className={s.container__content__ol}>
           <li>
             Jeśli użytkownik nie chce otrzymywać plików cookies, może zmienić
             ustawienia przeglądarki. Zastrzegamy, że wyłączenie obsługi plików
