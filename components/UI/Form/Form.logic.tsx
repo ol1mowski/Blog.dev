@@ -20,14 +20,12 @@ function Form({ action }: { action: (formData: FormData) => Promise<void> }) {
 
     try {
       await action(formData);
-      setSuccess("[+] Zapisano do Newslettera ☺️");
+      setSuccess("Newsletter wkrótce będzie dostępny ;)");
       if (inp.current) {
         inp.current.value = "";
       }
     } catch (err) {
-      setError(
-        "[-] Zapis do Newslettera zakończył się niepowodzeniem, Sprobuj ponownie poźniej"
-      );
+      setError("[-] Błędny adres email, Sprobuj ponownie");
     } finally {
       setIsPending(false);
     }
