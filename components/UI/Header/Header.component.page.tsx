@@ -1,3 +1,5 @@
+'use client'
+
 import s from "./Header.component.module.scss";
 
 import Image, { type StaticImageData } from "next/image";
@@ -6,6 +8,8 @@ import { ITEMS } from "./StaticData";
 import Button from "../Button/Button.component";
 import Item from "./Item/Item.component";
 import Link from "next/link";
+import { useContext } from "react";
+import HamburgerClickContext from "@/store/HamburgerClickContext";
 
 function Header({
   logo,
@@ -14,6 +18,12 @@ function Header({
   logo: StaticImageData;
   hamburger: StaticImageData;
 }) {
+  const { setOpen } = useContext(HamburgerClickContext);
+
+  const openHamburgerMenuHandler = () => {
+    setOpen(true);
+  };
+
   return (
     <header className={s.headerWrapper}>
       <section className={s.headerWrapper__logoSection}>
@@ -30,6 +40,7 @@ function Header({
 
       <section className={s.headerWrapper__hamburgerMenu}>
         <Image
+          onClick={openHamburgerMenuHandler}
           src={hamburger}
           alt="Hamburger menu icon"
           width={30}

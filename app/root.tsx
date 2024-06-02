@@ -1,6 +1,7 @@
 "use client";
 
 import Footer from "@/components/UI/Footer/Footer.component.page";
+import HamburgerClickContext from "@/store/HamburgerClickContext";
 import PostVisibleContext from "@/store/PostVisible.context";
 import React, { useState } from "react";
 
@@ -9,6 +10,7 @@ function Root({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [open, setOpen] = useState<boolean>(false);
   const [sectionVisible, setSectionVisible] = useState<{
     sectionName: string;
     isVisible: boolean;
@@ -17,20 +19,27 @@ function Root({
   return (
     <html lang="pl-PL">
       <body>
-        <PostVisibleContext.Provider
+        <HamburgerClickContext.Provider
           value={{
-            sectionVisible: sectionVisible,
-            setSectionVisible(sectionName, isVisible) {
-              setSectionVisible({
-                sectionName: sectionName,
-                isVisible: isVisible,
-              });
-            },
+            isOpen: open,
+            setOpen: (open: boolean) => setOpen(open),
           }}
         >
-          {children}
-          <Footer />
-        </PostVisibleContext.Provider>
+          <PostVisibleContext.Provider
+            value={{
+              sectionVisible: sectionVisible,
+              setSectionVisible(sectionName, isVisible) {
+                setSectionVisible({
+                  sectionName: sectionName,
+                  isVisible: isVisible,
+                });
+              },
+            }}
+          >
+            {children}
+            <Footer />
+          </PostVisibleContext.Provider>
+        </HamburgerClickContext.Provider>
       </body>
     </html>
   );
