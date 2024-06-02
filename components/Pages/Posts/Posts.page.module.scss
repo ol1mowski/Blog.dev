@@ -27,6 +27,7 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 5rem;
+    justify-items: center;
     @media screen and (min-width: $big-tablet) {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
